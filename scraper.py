@@ -29,7 +29,7 @@ while path:
 
     next_btn = soup.find(class_="next") # find next btn with next page url
     path = next_btn.find("a")["href"] if next_btn else None
-    sleep(0.5) # make a pause after each request to not overload server
+    sleep(2) # make a pause after each request to not overload server
 
 # print(all_quotes)
 remaining_guesses = 4
